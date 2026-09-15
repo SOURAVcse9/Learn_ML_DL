@@ -11,7 +11,7 @@
 - 🔗 **ক্লিন মার্জিং**: কাজ শেষে GitHub-এ Pull Request (PR) তৈরির মাধ্যমে ১ ক্লিকে `main` ব্রাঞ্চের নির্দিষ্ট ফোল্ডারে মার্জ করা।
 
 ---
-
+git subtree push --prefix=02_Deep_Learning/CNN origin CNN
 ## 🔄 সম্পূর্ণ ওয়ার্কফ্লো চিত্র (Workflow Diagram)
 
 ```mermaid
