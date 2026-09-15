@@ -1,4 +1,4 @@
-﻿# 🧠 Learn Machine Learning & Deep Learning (Learn_ML_DL)
+# 🧠 Learn Machine Learning & Deep Learning (Learn_ML_DL)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -13,47 +13,47 @@
 
 ## 📌 About The Repository
 
-Welcome to **Learn_ML_DL** — a comprehensive, hands-on repository containing all learning modules, projects, lab preparations, and practical codes for **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Applied AI**. 
+Welcome to **Learn_ML_DL** — a comprehensive, hands-on repository containing all learning modules, projects, lab preparations, and practical codes for **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Applied AI**.
 
-All modules from across different branches (ML, DL, i_lab_prep, eatures_selection_models) have been cleanly unified here in the **main** branch.
+All modules from across different branches have been cleanly unified here in the **`main`** branch.
 
 ---
 
 ## 📂 Complete Repository Structure
 
-`	ext
+```text
 Learn_ML_DL/
 │
 ├── 01_Machine_Learning/
-│   ├── 100_days_of_ml/             # Daily curriculum: Preprocessing, Regression, Classification, Ensembles
-│   ├── algorithms/                 # KNN, Linear/Logistic/Multiple/Polynomial Regression implementations
-│   │   └── regression/             # Linear, Multiple, Polynomial, Logistic regression scripts & visualizations
-│   ├── feature_selection/          # Feature selection methods on wine quality dataset & reference guides
-│   ├── python_basics/              # Python fundamentals & common libraries notes
-│   └── roadmap/                    # Machine Learning visual roadmap
+│   ├── 100_days_of_ml/             # Preprocessing, Regression, Classification, Ensembles
+│   ├── algorithms/                 # KNN, Linear, Logistic, Multiple, Polynomial Regression
+│   │   └── regression/             # Python scripts and loss visualization charts
+│   ├── feature_selection/          # Wine quality project and selection guides
+│   ├── python_basics/              # Python syntax and core data science libraries
+│   └── roadmap/                    # Visual machine learning roadmap
 │
 ├── 02_Deep_Learning/
-│   ├── tensors/                    # Tensor operations, shapes, and broadcasting in TensorFlow
+│   ├── tensors/                    # Tensor operations, broadcasting, and indexing
 │   ├── activation_functions/       # Sigmoid, ReLU, LeakyReLU, Tanh, Softmax implementations
-│   └── CNN/                        # Convolutional Neural Networks for image classification
+│   └── CNN/                        # Convolutional Neural Networks and architectures
 │
 ├── 03_Computer_Vision/
 │   ├── main.py                     # Real-time object detection using YOLOv8 & OpenCV
-│   ├── yolov8n.pt                  # Pre-trained YOLOv8 nano weights
-│   └── samples/                    # Sample test images
+│   ├── yolov8n.pt                  # Pre-trained YOLOv8 nano model weights
+│   └── samples/                    # Sample test images and media
 │
 ├── 04_AI_Lab_Preparation/
-│   ├── project_heart_disease/      # HealthPlus Heart Disease Prediction (Notebook, Script, Dataset, Report)
+│   ├── project_heart_disease/      # Heart disease prediction ML pipeline and reports
 │   ├── datasets/                   # Cancer dataset, Heart disease datasets & archives
-│   ├── reports/                    # Final exam lab reports, prompt histories & documentation
-│   └── photos/                     # Lab diagram photos and workflow screenshots (1.png to 33.png)
+│   ├── reports/                    # Final exam lab reports, prompt histories & docs
+│   └── photos/                     # Lab diagram photos and workflow screenshots
 │
-├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, Cancer, data.csv)
+├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, data.csv)
 │
-├── .gitignore                      # Clean Git ignore rules for ML, Jupyter, and heavy media
-├── requirements.txt                # Python environment dependencies
-└── README.md                       # Main repository documentation & guide
-`
+├── BRANCHING_GUIDE.md              # Step-by-step Git branching and workflow guide
+├── requirements.txt                # Python dependencies
+└── README.md                       # Repository overview and documentation
+```
 
 ---
 
@@ -61,9 +61,7 @@ Learn_ML_DL/
 
 ### 1️⃣ 01_Machine_Learning
 - **Python Basics & Libraries**: Core syntax, NumPy, Pandas, Matplotlib, and Scikit-Learn basics.
-- **Algorithms from Scratch**:
-  - Linear Regression, Multiple Linear Regression, Polynomial Regression, Logistic Regression.
-  - K-Nearest Neighbors (KNN).
+- **Algorithms from Scratch**: Linear Regression, Multiple Linear Regression, Polynomial Regression, Logistic Regression, K-Nearest Neighbors (KNN).
 - **100 Days of ML Curriculum**:
   - Missing Value Imputation (Mean/Median, Arbitrary, Frequent Category, KNN Imputer, Iterative Imputer).
   - Categorical Encoding (One-Hot, Ordinal, Mixed Variables).
@@ -75,7 +73,7 @@ Learn_ML_DL/
 - **Feature Selection**: Filter, Wrapper, and Embedded methods tested on multi-attribute datasets.
 
 ### 2️⃣ 02_Deep_Learning
-- **Tensor Operations**: Tensors, mathematical transformations, dimensions, and indexing.
+- **Tensor Operations**: Tensors, mathematical transformations, dimensions, and indexing in TensorFlow.
 - **Activation Functions**: Visualizations and implementations of Sigmoid, ReLU, Leaky ReLU, Tanh, Softmax.
 - **CNN (Convolutional Neural Networks)**: Convolutions, pooling, feature maps, and image classification architectures.
 
@@ -88,41 +86,41 @@ Learn_ML_DL/
 
 ---
 
-## 🌿 Git Branching & Workflow
+## 🌿 Git Branching Strategy
 
-| Branch | Description |
-|---|---|
-| main | **Master Repository**: Central hub containing all consolidated learning modules, projects, and datasets. |
-| eature/<name> | **Future Experiments**: Use separate feature branches for new exploratory projects, then merge to main. |
+See our full [BRANCHING_GUIDE.md](BRANCHING_GUIDE.md) for step-by-step instructions on creating topic branches, working on isolated features, and submitting clean Pull Requests into `main`.
 
 ---
 
 ## 💻 Local Setup & Execution
 
 ### 1. Clone & Navigate
-`ash
+```bash
 git clone https://github.com/SOURAVcse9/Learn_ML_DL.git
 cd Learn_ML_DL
-`
+```
 
 ### 2. Activate Virtual Environment & Install Dependencies
-`ash
-# Windows
+```bash
+# Windows (PowerShell)
 python -m venv venv
 .\venv\Scripts\Activate.ps1
+
+# Install Dependencies
 pip install -r requirements.txt
-`
+```
 
 ### 3. Launch Notebooks or Scripts
-`ash
+```bash
 jupyter notebook
 # or run Computer Vision module
 python 03_Computer_Vision/main.py
-`
+```
 
 ---
 
 ## 👤 Author
 
-**SOURAV DEBNATH**  
+**SOURAV DEBNATH**
 - GitHub: [@SOURAVcse9](https://github.com/SOURAVcse9)
+- Repository: [Learn_ML_DL](https://github.com/SOURAVcse9/Learn_ML_DL)
