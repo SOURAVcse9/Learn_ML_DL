@@ -13,148 +13,116 @@
 
 ## 📌 About The Repository
 
-Welcome to **Learn_ML_DL** — a structured, hands-on repository documenting my journey through **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Applied AI**. 
+Welcome to **Learn_ML_DL** — a comprehensive, hands-on repository containing all learning modules, projects, lab preparations, and practical codes for **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Applied AI**. 
 
-This repository serves as both a comprehensive learning path and a reference portfolio containing:
-- Mathematical intuitions and code from scratch.
-- Industry-standard pipelines using **Scikit-Learn**, **TensorFlow**, and **OpenCV / YOLOv8**.
-- End-to-end projects, feature engineering techniques, lab preparations, and model evaluations.
+All modules from across different branches (ML, DL, i_lab_prep, eatures_selection_models) have been cleanly unified here in the **main** branch.
 
 ---
 
-## 📂 Repository Structure
+## 📂 Complete Repository Structure
 
 `	ext
 Learn_ML_DL/
 │
 ├── 01_Machine_Learning/
 │   ├── 100_days_of_ml/             # Daily curriculum: Preprocessing, Regression, Classification, Ensembles
-│   ├── algorithms/                 # Core algorithms implemented from scratch & with Scikit-Learn (KNN, etc.)
-│   ├── feature_selection/          # Advanced feature selection techniques & wine quality case study
-│   └── roadmap/                    # ML learning roadmap & visualizations
+│   ├── algorithms/                 # KNN, Linear/Logistic/Multiple/Polynomial Regression implementations
+│   │   └── regression/             # Linear, Multiple, Polynomial, Logistic regression scripts & visualizations
+│   ├── feature_selection/          # Feature selection methods on wine quality dataset & reference guides
+│   ├── python_basics/              # Python fundamentals & common libraries notes
+│   └── roadmap/                    # Machine Learning visual roadmap
 │
 ├── 02_Deep_Learning/
-│   ├── tensors/                    # Tensor operations, shapes, broadcasting, and manipulation
-│   ├── activation_functions/       # Sigmoid, ReLU, LeakyReLU, Tanh, Softmax implementations & notes
-│   └── CNN/                        # Convolutional Neural Networks for vision & classification
+│   ├── tensors/                    # Tensor operations, shapes, and broadcasting in TensorFlow
+│   ├── activation_functions/       # Sigmoid, ReLU, LeakyReLU, Tanh, Softmax implementations
+│   └── CNN/                        # Convolutional Neural Networks for image classification
 │
 ├── 03_Computer_Vision/
 │   ├── main.py                     # Real-time object detection using YOLOv8 & OpenCV
-│   ├── yolov8n.pt                  # Pre-trained YOLOv8 nano model weights
-│   └── samples/                    # Sample test images and media
+│   ├── yolov8n.pt                  # Pre-trained YOLOv8 nano weights
+│   └── samples/                    # Sample test images
 │
 ├── 04_AI_Lab_Preparation/
-│   ├── datasets/                   # Lab course datasets
-│   ├── files/                      # Academic reference files and solution scripts
-│   └── photos/                     # Diagrams, visual proofs, and workflow snapshots
+│   ├── project_heart_disease/      # HealthPlus Heart Disease Prediction (Notebook, Script, Dataset, Report)
+│   ├── datasets/                   # Cancer dataset, Heart disease datasets & archives
+│   ├── reports/                    # Final exam lab reports, prompt histories & documentation
+│   └── photos/                     # Lab diagram photos and workflow screenshots (1.png to 33.png)
 │
-├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, Data.csv, etc.)
+├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, Cancer, data.csv)
 │
-├── .gitignore                      # Optimized Git ignore rules for ML, Jupyter, and media
+├── .gitignore                      # Clean Git ignore rules for ML, Jupyter, and heavy media
 ├── requirements.txt                # Python environment dependencies
-└── README.md                       # Project documentation & guide
+└── README.md                       # Main repository documentation & guide
 `
 
 ---
 
-## 🚀 Curriculum & Topics Covered
+## 🚀 Key Modules & Curriculum
 
 ### 1️⃣ 01_Machine_Learning
-- **Data Preprocessing & Feature Engineering**:
-  - Missing Data Imputation: Mean/Median, Arbitrary, Frequent Category, KNN Imputer, Iterative Imputer.
-  - Encoding: One-Hot Encoding, Ordinal Encoding, Mixed Variable Handling.
-  - Transformations: Function Transformer, Power Transformer (Box-Cox, Yeo-Johnson), ColumnTransformer, Pipelines.
-  - Outlier Detection & Removal: Z-score, IQR Method, Percentiles / Trimming / Capping.
-  - Dimensionality Reduction: Principal Component Analysis (PCA) step-by-step.
-- **Supervised Learning**:
-  - Linear Regression: Simple, Multiple, Polynomial, Gradient Descent (Batch, Stochastic, Mini-batch).
-  - Regularization: Ridge (L2), Lasso (L1), ElasticNet Regression.
-  - Classification: Logistic Regression, Softmax, K-Nearest Neighbors (KNN).
-  - Metrics: Confusion Matrix, Precision, Recall, F1-Score, ROC-AUC, Binary & Multi-class evaluation.
-- **Ensemble Techniques**:
-  - Bagging & Random Forests (OOB Score, Feature Importance).
-  - Boosting: AdaBoost, Gradient Boosting.
-  - Stacking & Blending.
-- **Unsupervised Learning**:
-  - K-Means Clustering (Elbow Method, Step-by-Step implementation).
-- **Feature Selection**:
-  - Filter, Wrapper, and Embedded methods tested on multi-dimensional datasets.
+- **Python Basics & Libraries**: Core syntax, NumPy, Pandas, Matplotlib, and Scikit-Learn basics.
+- **Algorithms from Scratch**:
+  - Linear Regression, Multiple Linear Regression, Polynomial Regression, Logistic Regression.
+  - K-Nearest Neighbors (KNN).
+- **100 Days of ML Curriculum**:
+  - Missing Value Imputation (Mean/Median, Arbitrary, Frequent Category, KNN Imputer, Iterative Imputer).
+  - Categorical Encoding (One-Hot, Ordinal, Mixed Variables).
+  - Feature Transformations (Function Transformer, Power Transformer, ColumnTransformer, Pipelines).
+  - Outlier Detection & Handling (Z-Score, IQR, Percentiles, Trimming, Capping).
+  - Dimensionality Reduction (PCA step-by-step).
+  - Ensemble Methods (Random Forest, AdaBoost, Gradient Boosting, Stacking & Blending).
+  - Unsupervised Learning (K-Means clustering).
+- **Feature Selection**: Filter, Wrapper, and Embedded methods tested on multi-attribute datasets.
 
 ### 2️⃣ 02_Deep_Learning
-- **Tensor Fundamentals**: Rank, dimensions, tensor indexing, mathematical operations in TensorFlow.
-- **Activation Functions**: Detailed intuition and code for Sigmoid, Tanh, ReLU, Leaky ReLU, ELU, Softmax.
-- **Neural Network Architectures**: Multi-layer Perceptrons (MLP), Forward & Backward Propagation, Loss functions, Optimizers.
-- **Convolutional Neural Networks (CNN)**: Feature extractors, filters, pooling layers, and classification heads.
+- **Tensor Operations**: Tensors, mathematical transformations, dimensions, and indexing.
+- **Activation Functions**: Visualizations and implementations of Sigmoid, ReLU, Leaky ReLU, Tanh, Softmax.
+- **CNN (Convolutional Neural Networks)**: Convolutions, pooling, feature maps, and image classification architectures.
 
 ### 3️⃣ 03_Computer_Vision
-- **OpenCV**: Image transformations, frame capturing, color spaces, drawing utilities.
-- **Real-Time Object Detection**: Integrated **YOLOv8** (You Only Look Once) with OpenCV and CVZone for real-time person/object detection and tracking.
+- **Real-Time Object Detection**: Real-time object and person detection using **YOLOv8** and **OpenCV / CVZone**.
 
 ### 4️⃣ 04_AI_Lab_Preparation
-- University / academic laboratory preparation problems, search algorithms, heuristic searches, and practical lab tests with full step-by-step visual documentation.
+- **Heart Disease Prediction Project**: Complete ML pipeline with exploratory data analysis, clean dataset, model evaluation, and final report.
+- **Lab Assignments & Reports**: Full course lab solutions, exam project reports, prompt history, and visual proofs.
 
 ---
 
-## 🌿 Git Branching Strategy
+## 🌿 Git Branching & Workflow
 
-To keep the repository organized as more projects are added in the future, the following branching strategy is recommended:
-
-| Branch Name | Purpose |
+| Branch | Description |
 |---|---|
-| main | **Production / Portfolio Hub**: Polished, well-documented, clean codebase containing all aggregated modules. |
-| eature/<topic-name> | **New Features / Experiments**: For new experimental modules (e.g., eature/nlp-transformers, eature/reinforcement-learning). |
-| project/<project-name> | **Dedicated Projects**: For standalone end-to-end applications before merging into main. |
-| i_lab_prep | **Academic Lab Work**: Specific branch for lab assignments and exams. |
-
-> 💡 **Tip:** Always develop new topics in a feature branch, and merge into main using Pull Requests once tested and documented.
+| main | **Master Repository**: Central hub containing all consolidated learning modules, projects, and datasets. |
+| eature/<name> | **Future Experiments**: Use separate feature branches for new exploratory projects, then merge to main. |
 
 ---
 
-## 💻 Getting Started & Local Setup
+## 💻 Local Setup & Execution
 
-### 1. Clone the Repository
+### 1. Clone & Navigate
 `ash
 git clone https://github.com/SOURAVcse9/Learn_ML_DL.git
 cd Learn_ML_DL
 `
 
-### 2. Create and Activate a Virtual Environment
+### 2. Activate Virtual Environment & Install Dependencies
 `ash
-# Windows (PowerShell)
+# Windows
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-
-# Linux / macOS
-python3 -m venv venv
-source venv/bin/activate
-`
-
-### 3. Install Dependencies
-`ash
 pip install -r requirements.txt
 `
 
-### 4. Launch Jupyter Notebook / Lab
+### 3. Launch Notebooks or Scripts
 `ash
 jupyter notebook
-# or
-jupyter lab
-`
-
-### 5. Run Object Detection (OpenCV + YOLOv8)
-`ash
-cd 03_Computer_Vision
-python main.py
+# or run Computer Vision module
+python 03_Computer_Vision/main.py
 `
 
 ---
 
 ## 👤 Author
 
-**SOURAV DEBNATH**
+**SOURAV DEBNATH**  
 - GitHub: [@SOURAVcse9](https://github.com/SOURAVcse9)
-- Repository: [Learn_ML_DL](https://github.com/SOURAVcse9/Learn_ML_DL)
-
----
-
-<p align="center">⭐ If you find this repository helpful for your ML/DL journey, feel free to give it a star!</p>
