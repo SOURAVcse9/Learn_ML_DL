@@ -1,7 +1,7 @@
 ﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.class
+*$py.class
 
 # C extensions
 *.so
@@ -47,12 +47,20 @@ venv.bak/
 *.driveupload
 *.drivedownload
 
-# Heavy Video Samples (ignored to keep Git repository lightweight and under GitHub file size limits)
+# Heavy Video Samples (ignored to keep Git repository lightweight)
 *.mp4
 *.avi
 *.mov
 *.mkv
 *.wmv
+
+# Dataset Downloads & Caches
+cifar-10-batches-py/
+*/cifar-10-batches-py/
+data/
+*/data/
+*.tar.gz
+*.tar
 
 # Operating System & Editor Files
 .DS_Store
