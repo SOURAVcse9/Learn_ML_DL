@@ -51,7 +51,8 @@ Learn_ML_DL/
 ├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, data.csv)
 │
 ├── 06_speech/
-│   └── audio_basic/                # Audio signals, waveforms, STFT, Spectrograms, MFCCs & Librosa
+│   ├── audio_basic/                # Audio signals, waveforms, STFT, Spectrograms, MFCCs & Librosa
+│   └── audio_processing/           # Audio cleaning, noise reduction, SpecAugment & feature extraction
 │
 ├── BRANCHING_GUIDE.md              # Step-by-step Git branching and workflow guide
 ├── requirements.txt                # Python dependencies
@@ -88,8 +89,8 @@ Learn_ML_DL/
 - **Lab Assignments & Reports**: Full course lab solutions, exam project reports, prompt history, and visual proofs.
 
 ### 5️⃣ 06_speech
-- **Audio Signal Processing Basics**: Amplitude, frequency, sampling rate ($16kHz, 44.1kHz$), Nyquist theorem, bit depth.
-- **Feature Extraction**: Waveforms, Fast Fourier Transform (FFT), Spectrograms, Mel-Spectrograms, MFCCs using **Librosa** and **Torchaudio**.
+- **Audio Basics (`audio_basic`)**: Sound waves, sampling rate, bit depth, FFT, Spectrograms, Mel-Spectrograms, MFCCs.
+- **Audio Processing (`audio_processing`)**: Trimming, pre-emphasis, noise filtering, time-stretching, pitch-shifting, SpecAugment, and audio feature extraction.
 
 ---
 
