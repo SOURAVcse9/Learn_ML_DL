@@ -13,7 +13,7 @@
 
 ## 📌 About The Repository
 
-Welcome to **Learn_ML_DL** — a comprehensive, hands-on repository containing all learning modules, projects, lab preparations, and practical codes for **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Applied AI**.
+Welcome to **Learn_ML_DL** — a comprehensive, hands-on repository containing all learning modules, projects, lab preparations, and practical codes for **Machine Learning**, **Deep Learning**, **Computer Vision**, **Speech & Audio Processing**, and **Applied AI**.
 
 All modules from across different branches have been cleanly unified here in the **`main`** branch.
 
@@ -50,6 +50,9 @@ Learn_ML_DL/
 │
 ├── 05_Datasets/                    # Shared datasets (Titanic, Boston Housing, KNN, data.csv)
 │
+├── 06_speech/
+│   └── audio_basic/                # Audio signals, waveforms, STFT, Spectrograms, MFCCs & Librosa
+│
 ├── BRANCHING_GUIDE.md              # Step-by-step Git branching and workflow guide
 ├── requirements.txt                # Python dependencies
 └── README.md                       # Repository overview and documentation
@@ -83,6 +86,10 @@ Learn_ML_DL/
 ### 4️⃣ 04_AI_Lab_Preparation
 - **Heart Disease Prediction Project**: Complete ML pipeline with exploratory data analysis, clean dataset, model evaluation, and final report.
 - **Lab Assignments & Reports**: Full course lab solutions, exam project reports, prompt history, and visual proofs.
+
+### 5️⃣ 06_speech
+- **Audio Signal Processing Basics**: Amplitude, frequency, sampling rate ($16kHz, 44.1kHz$), Nyquist theorem, bit depth.
+- **Feature Extraction**: Waveforms, Fast Fourier Transform (FFT), Spectrograms, Mel-Spectrograms, MFCCs using **Librosa** and **Torchaudio**.
 
 ---
 
