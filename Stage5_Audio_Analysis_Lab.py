@@ -54,15 +54,16 @@ import librosa
 import librosa.display
 import soundfile as sf
 
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio_lab_outputs")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "audio_lab_outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
 def show_and_save(fig_name):
     """Save the current matplotlib figure and try to display it."""
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, f"{fig_name}.png")
     plt.tight_layout()
-    plt.savefig(path, dpi=130)
+    plt.savefig(path, dpi=130, bbox_inches="tight")
     print(f"  [saved figure -> {path}]")
     try:
         plt.show()

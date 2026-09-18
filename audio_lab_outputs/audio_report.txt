@@ -1,0 +1,17 @@
+================ AUDIO REPORT ================
+File               : .\sample-1.mp3
+Duration           : 96.066 s
+Sampling Rate      : 44100 Hz
+Channels           : 2 (Stereo)
+Number of Samples  : 4236528
+Bit Depth          : MPEG_LAYER_III
+Min Amplitude      : -0.56616
+Max Amplitude      : 0.56353
+RMS                : 0.10288
+Nyquist Frequency  : 22050 Hz
+
+Estimated Non-Silence : 100.0%
+Estimated Silence      : 0.0%
+
+Pitch (F0): 80.1-86.8 Hz (mean 82.7 Hz)
+================================================
